@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="flex-container">
+
+        <div class="card">
+
+            <img src="img1.jpg">
+
+            <div class="card-content">
+                <h3 class="card-title">Top Winter Locations</h3>
+                <p class="card-subtitle">More than 200 locations</p>
+                <p class="desc">Cards provice context and an entry point to more robust information and views, and their content and quantity can vary greatly</p>
+            </div>
+
+            <div class="card-footer">
+                <a href="#share">SHARE</a>
+                <a href="#explore" id="explore1btn">EXPLORE</a>
+                <i class="fa fa-chevron-down right" aria-hidden="true"></i>
+            </div>
+    
+        </div>
+
+        <div class="card">
+
+            <img src="img2.jpg">
+
+            <div class="card-content">
+                <h3 class="card-title">Top Eastern Road Trips</h3>
+                <p class="card-subtitle">2000 miles of wonder</p>
+                <!-- <p class="desc">Cards provice context and an entry point to more robust information and views, and their content and quantity can vary greatly</p> -->
+            </div>
+
+            <div class="card-footer">
+                <a href="#share">SHARE</a>
+                <a href="#explore" id="explore2btn">EXPLORE</a>
+                <i class="fa fa-chevron-down right" aria-hidden="true"></i>
+            </div>
+    
+        </div>
+
+        <div class="card">
+
+            <div class="card-header">
+                <img src="user.jpeg" class="user-thumbnail">
+                <div class="user-info">
+                    <p class="user-name"> Fajar Sebastian </p>
+                    <p class="user-time">20 Minutes Ago</p>
+                </div>
+            </div>
+
+            <img src="img3.jpg">
+
+            <div class="card-content">
+                <h3 class="card-title">Kangaroo Valley Safari</h3>
+                <p class="card-subtitle">Free on Thursdays</p>
+                <p class="desc">Cards provice context and an entry point to more robust information and views, and their content and quantity can vary greatly</p>
+            </div>
+    
+        </div>
+
+        <div class="card">
+
+            <img src="img2.jpg">
+
+            <div class="card-footer right">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-bookmark" aria-hidden="true"></i>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </div>
+    
+        </div>
+
+    </div>
+
+
+
+    <div id="explore1Modal" class="modal">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <span class="close">&times;</span>
+            </div>
+         
+            <div class="modal-body">
+                <img src="img1.jpg">
+
+                <div class="card-content">
+                    <h3 class="card-title">Top Winter Locations</h3>
+                    <p class="card-subtitle">More than 200 locations</p>
+                    <p class="desc">Cards provice context and an entry point to more robust information and views, and their content and quantity can vary greatly</p>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+    <div id="explore2Modal" class="modal">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <span class="close">&times;</span>
+            </div>
+         
+            <div class="modal-body">
+                <img src="img2.jpg">
+
+                <div class="card-content">
+                    <h3 class="card-title">Top Eastern Road Trips</h3>
+                    <p class="card-subtitle">2000 miles of wonder</p>
+                    <p class="desc">Cards provice context and an entry point to more robust information and views, and their content and quantity can vary greatly</p>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+
+      <script>
+        var modal1 = document.getElementById("explore1Modal");
+        var modal2 = document.getElementById("explore2Modal");
+        var btn1 = document.getElementById("explore1btn");
+        var btn2 = document.getElementById("explore2btn");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn1.onclick = function() {
+          modal1.style.display = "block";
+        }
+
+         btn2.onclick = function() {
+          modal2.style.display = "block";
+        }
+        
+        window.onclick = function(event) {
+          if (event.target == modal1) {
+            modal1.style.display = "none";
+          }
+        }
+
+        window.onclick = function(event) {
+          if (event.target == modal2) {
+            modal2.style.display = "none";
+          }
+        }
+
+        span.onclick = function() {
+          modal1.style.display = "none";
+          modal2.style.display = "none";
+        }
+
+        </script>
+    
+</body>
+</html>

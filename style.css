@@ -1,0 +1,161 @@
+body {
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    padding: 1rem;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: white;
+    flex: 0 1 23%;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.card-header {
+    padding: 12px;
+    display: flex;
+}
+
+.user-thumbnail {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+.user-info {
+    padding: 5px
+}
+
+.user-name {
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0 6px;
+}
+
+.user-time {
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+    color: grey;
+    margin: 0 6px;
+    line-height: 2;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-title {
+    margin: 2px 0;
+}
+
+.card-subtitle {
+    margin: 2px 0;
+    color: grey;
+}
+
+.desc {
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+}
+
+img {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+}
+
+.card-footer{
+    padding: 16px;
+    display: flex;
+}
+
+.card-footer a {
+    margin:  0 6px;
+    color: deepskyblue;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.right {
+    margin-left: auto;
+}
+
+i {
+    margin: 0 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    padding-top: 10px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: scroll; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  .close {
+    color: grey;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+
+  }
+  
+  .modal-body {
+      padding: 2px 16px;
+}
+  
+
